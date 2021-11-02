@@ -53,7 +53,7 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">id</th>
             <th scope="col">Nama</th>
             <th scope="col">Alamat</th>
             <th scope="col">Aksi</th>
