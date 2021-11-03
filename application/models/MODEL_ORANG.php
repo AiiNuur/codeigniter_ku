@@ -16,6 +16,17 @@ class Model_orang extends CI_Model {
         $this->db->query("INSERT INTO orang(nama, alamat) Values('$nama','$alamat')");
 
     }
+    public function prosesHapusOrang($id) {
+        $this->load->database();
 
+        $this->db->query("DELETE FROM orang WHERE id = $id");
+    }
+
+    public function prosesubahorang($id, $nama, $alamat) {
+        $this->load->database();
+
+        $this->db->query("UPDATE orang SET nama = ' $nama', alamat = '$alamat' where id = $id");
+    }
 }
+
 ?>
